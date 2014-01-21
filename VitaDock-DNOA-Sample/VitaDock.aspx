@@ -13,7 +13,7 @@
             <ol>
                 <li><a target="_blank" href="https://vitacloud.medisanaspace.com/">Visit VitaDock and create
 					a client app</a>. </li>
-                <li>Modify your web.config file to include your consumer key and consumer secret.</li>
+                <li>Modify your web.config file to include your consumer key and consumer secret.(Application Token and secret)</li>
             </ol>
         </asp:View>
         <asp:View runat="server">
@@ -25,16 +25,14 @@
 				you for your VitaDock username or password.
                 </p>
                 <p>
-                    We could show data from VitaDock here...
-                </p>
-                <p>
-                    Click &#39;Get updates&#39; to download updates to this sample.
+                    Click &#39;Get updates&#39; to download temperature data. If you do not have any logged data you can click "Log temperature test data" to 
+                    register som random temperature data in your account.
                 </p>
                 <p>
                     <asp:TextBox ID="tempTXT" TextMode="MultiLine" runat="server">...</asp:TextBox>
                 </p>
                 <asp:Button ID="downloadUpdates" runat="server" Text="Get updates" OnClick="Action_Click" />
-                <asp:Button ID="logThermoTestData" runat="server" Text="Log temperatur test data" OnClick="LogThermoTestData" />
+                <asp:Button ID="logThermoTestData" runat="server" Text="Log temperature test data" OnClick="LogThermoTestData" />
 
                 <asp:PlaceHolder runat="server" ID="resultsPlaceholder" />
             </form>
